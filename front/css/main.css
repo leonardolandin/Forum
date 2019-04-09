@@ -32,6 +32,9 @@ a {
   z-index: -1;
 }
 .nav-bar {
+  display: flex;
+  max-width: 1200px;
+	margin: 0 auto;
   background: #171717;
   border-top: 1px solid #2b2b2b;
   border-bottom: 1px solid #2b2b2b;
