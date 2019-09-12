@@ -1,71 +1,96 @@
 body {
-    margin: 0;
-    padding: 0;
-  }
-  
-  li {
-    list-style-type: none;
-    height: 100%;
-    display: flex;
-    align-items: center;
-  }
-  
-  li a {
-    text-decoration: none;
-    color: gainsboro;
-    height: 100%;
-    width: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 30px;
-    font-family: "Lucida Console", Monaco, monospace;
-    transition: 0.5s all;
-  }
-  
-  li a:hover {
-    background-color: #292727;
-    color: #ffd700;
-  }
-  
-  .background {
-    background: url(../images/background.png) no-repeat;
-    background-size: cover;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .menu-top {
-    background-color: #171717;
-    width: 860px;
-    height: 140px;
-    display: flex;
-    margin-top: 170px;
-  }
-  
-  .nav-top {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    position: relative;
-  }
-  
-  .logo {
-    width: 178px;
-    height: 178px;
-    position: absolute;
-    bottom: 15px;
-    left: -73px;
-  }
-  
-  .container-items {
-    display: flex;
-    padding: 0;
-    align-items: center;
-    width: 100%;
-    justify-content: center;
-    margin: 0;
-  }
-  
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+li a {
+  text-decoration: none;
+  color: gainsboro;
+  height: 100%;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  font-family: "Lucida Console", Monaco, monospace;
+  transition: 0.5s all;
+}
+
+li a:hover {
+  background-color: #292727;
+  color: #ffd700;
+}
+
+.background {
+  background: url(../images/background.png) no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.menu-top {
+  background-color: #171717;
+  width: 860px;
+  height: 140px;
+  display: flex;
+  margin-top: 170px;
+}
+
+.nav-top {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.logo {
+  width: 178px;
+  height: 178px;
+  position: absolute;
+  bottom: 15px;
+  left: -73px;
+}
+
+.container-items {
+  display: flex;
+  padding: 0;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  margin: 0 0 0 130px;
+}
+
+.container-social {
+  width: 100%;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  margin-right: 15px;
+}
+
+.container-social a {
+  display: flex;
+  margin: 5px;
+}
+
+.container-social a img {
+  height: 30px;
+  width: 30px;
+}
+
+.container-social a img:hover {
+  height: 40px;
+  width: 40px;
+  transition: all 0.2s;
+}
