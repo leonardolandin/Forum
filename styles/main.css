@@ -34,7 +34,8 @@ li a:hover {
   width: 100vw;
   height: 100vh;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .menu-top {
@@ -42,7 +43,6 @@ li a:hover {
   width: 860px;
   height: 140px;
   display: flex;
-  margin-top: 170px;
 }
 
 .nav-top {
@@ -93,4 +93,38 @@ li a:hover {
   height: 40px;
   width: 40px;
   transition: all 0.2s;
+}
+
+.login-container {
+  width: 860px;
+  height: 100px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.login-container button {
+  height: 40px;
+  width: 100px;
+  border: 1px solid #00000063;
+  border-radius: 3px;
+  background-color: #00000063;
+  font-weight: bold;
+  color: white;
+  margin: 20px;
+  cursor: pointer;
+  outline: none;
+}
+
+.login-container button:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid white;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 1;
 }

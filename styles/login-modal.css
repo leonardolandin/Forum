@@ -1,0 +1,87 @@
+.modal-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sign-in-container {
+  border: 1px solid #171717;
+  background: #171717;
+  height: 530px;
+  width: 600px;
+  margin: 0;
+  outline: none;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sign-in-container h3 {
+  font-size: 50px;
+  margin: 0;
+  color: white;
+  font-weight: bold;
+}
+
+.title-and-exit {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-direction: row;
+  height: 70px;
+  position: relative;
+  align-items: flex-end;
+  margin-top: 25px;
+}
+
+.title-and-exit span {
+  color: white;
+  font-size: 100px;
+  display: flex;
+  position: absolute;
+  right: 0px;
+  bottom: 15px;
+  cursor: pointer;
+  height: 85px;
+  align-items: center;
+}
+
+.login {
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.login label {
+  font-size: 24px;
+  color: white;
+  margin-bottom: 8px;
+}
+
+.login input {
+  height: 40px;
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 10px 10px 10px 50px;
+  outline: none;
+}
+
+.image-login {
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  top: 285px;
+  left: 426px;
+}
+
+.image-password {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  top: 415px;
+  left: 430px;
+}
