@@ -1,9 +1,24 @@
 .modal-container {
   width: 100vw;
   height: 100vh;
-  display: flex;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  z-index: 1;
+  display: none;
+  transition: all 0.5s;
+  -webkit-animation: animatezoom 0.3s;
+  animation: animatezoom 0.3s;
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
 }
 
 .sign-in-container {
@@ -50,8 +65,8 @@
 }
 
 .login {
-  width: 100%;
-  margin-top: 50px;
+  width: 70%;
+  margin-top: 10px;
   display: flex;
   flex-direction: column;
 }
@@ -63,7 +78,7 @@
 }
 
 .login input {
-  height: 40px;
+  height: 20px;
   border: 1px solid black;
   border-radius: 4px;
   padding: 10px 10px 10px 50px;
@@ -73,15 +88,48 @@
 .image-login {
   height: 40px;
   width: 40px;
-  position: absolute;
-  top: 285px;
-  left: 426px;
+  position: relative;
+  left: 5px;
+  bottom: 40px;
 }
 
 .image-password {
-  position: absolute;
+  position: relative;
   height: 30px;
   width: 30px;
-  top: 415px;
-  left: 430px;
+  bottom: 35px;
+  left: 8px;
+}
+
+.forget-and-sigin {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.forget-and-sigin button {
+  height: 40px;
+  width: 100px;
+  border: 1px solid #00000063;
+  border-radius: 3px;
+  background-color: #00000063;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  outline: none;
+}
+
+.forget-and-sigin button:hover {
+  background-color: white;
+  color: black;
+  transition: all 0.3s;
+}
+
+.forget-and-sigin a {
+  text-decoration: none;
+  color: white;
+  align-self: center;
+  font-weight: bold;
+  font-size: 20px;
 }

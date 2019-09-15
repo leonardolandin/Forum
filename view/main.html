@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <title>LuthCraft | Fórum</title>
     <link href="../styles/main.css" rel="stylesheet" />
+    <link href="../styles/login-modal.css" rel="stylesheet" />
     <link rel="icon" type="imagem/png" href="../images/luthcraft.ico" />
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -14,9 +15,30 @@
     <div class="background">
       <div class="login-container">
         <button>Cadastrar-se</button>
-        <button>Entrar</button>
+        <button onclick="modal('login')">Entrar</button>
       </div>
-      <iframe src="./modal/login-modal.html" frameborder="0"></iframe>
+      <div class="modal-container" id="auth-login">
+        <form class="sign-in-container">
+          <div class="title-and-exit">
+            <h3>Login</h3>
+            <span onclick="modal('exit')">&times;</span>
+          </div>
+          <div class="login">
+            <label for="">Usuario:</label>
+            <input type="text" placeholder="Informe seu nome de usuário">
+            <img src="../../images/user-login.png" alt="" class="image-login">
+          </div>
+          <div class="login">
+              <label for="">Senha:</label>
+              <input type="password" placeholder="Informe a senha do usuário">
+              <img src="../../images/user-password.png" alt="" class="image-password">
+          </div>
+          <div class="forget-and-sigin">
+            <a href="">Esqueceu a senha ?</a>
+            <button>Entrar</button>
+          </div>
+        </form>
+      </div>
       <div class="menu-top">
         <nav class="nav-top">
           <img src="../images/logoluth.png" class="logo" />
@@ -51,5 +73,6 @@
         </nav>
       </div>
     </div>
+    <script src="../script/main.js"></script>
   </body>
 </html>
