@@ -7,16 +7,16 @@
   z-index: 1;
   display: none;
   transition: all 0.5s;
-  -webkit-animation: animatezoom 0.3s;
-  animation: animatezoom 0.3s;
+  -webkit-animation: zoom 0.3s;
+  animation: zoom 0.3s;
 }
 
-@-webkit-keyframes animatezoom {
+@-webkit-keyframes zoom {
   from {-webkit-transform: scale(0)} 
   to {-webkit-transform: scale(1)}
 }
   
-@keyframes animatezoom {
+@keyframes zoom {
   from {transform: scale(0)} 
   to {transform: scale(1)}
 }
