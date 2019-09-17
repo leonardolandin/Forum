@@ -133,3 +133,35 @@
   font-weight: bold;
   font-size: 20px;
 }
+
+.signup {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  height: 130px;
+}
+
+.login.up {
+  margin: 10px;
+  margin-top: 5px;
+}
+
+.forget-and-sigin.signup {
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.forget-and-sigin label {
+  color: white;
+  margin-bottom: 10px;
+  outline: none;
+}
+
+.sign-in-container.sign {
+  height: 545px;
+}
+
+.forget-and-sigin input {
+  margin-right: 8px;
+}

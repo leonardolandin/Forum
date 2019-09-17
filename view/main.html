@@ -14,7 +14,7 @@
   <body>
     <div class="background">
       <div class="login-container">
-        <button>Cadastrar-se</button>
+        <button onclick="modal('cadastro')">Cadastrar-se</button>
         <button onclick="modal('login')">Entrar</button>
       </div>
       <div class="modal-container" id="auth-login">
@@ -35,6 +35,57 @@
           </div>
           <div class="forget-and-sigin">
             <a href="">Esqueceu a senha ?</a>
+            <button>Entrar</button>
+          </div>
+        </form>
+      </div>
+      <div class="modal-container" id="auth-cadastro">
+        <form class="sign-in-container sign">
+          <div class="title-and-exit">
+            <h3>Cadastrar-se</h3>
+            <span onclick="modal('exit')">&times;</span>
+          </div>
+          <div class="signup">
+            <div class="login up">
+              <label for="">E-mail:</label>
+              <input type="text" placeholder="Informe seu email">
+              <img src="../../images/user-login.png" alt="" class="image-login">
+            </div>
+            <div class="login up">
+              <label for="">Senha:</label>
+              <input type="password" placeholder="Informe a senha">
+              <img src="../../images/user-password.png" alt="" class="image-password">
+            </div>
+          </div>
+          <div class="signup">
+            <div class="login up">
+              <label for="">Confirmar E-mail:</label>
+              <input type="text" placeholder="Informe seu email para confirmação">
+              <img src="../../images/user-login.png" alt="" class="image-login">
+            </div>
+            <div class="login up">
+              <label for="">Confirmar Senha:</label>
+              <input type="text" placeholder="Informe sua senha para confirmação">
+              <img src="../../images/user-password.png" alt="" class="image-password">
+            </div>
+          </div>
+          <div class="signup">
+            <div class="login up">
+              <label for="">Nick (Minecraft):</label>
+              <input type="text" placeholder="Informe seu nick">
+              <img src="../../images/mine.png" alt="" class="image-password">
+            </div>
+            <div class="login up">
+              <label for="">Discord:</label>
+              <input type="text" placeholder="Informe seu discord">
+              <img src="../../images/discord.png" alt="" class="image-password">
+            </div>
+          </div>
+          <div class="forget-and-sigin signup">
+            <label for="adm">
+              <input type="checkbox" name="" id="adm">Receber e-mails de administradores.</label>
+            <label for="terms">
+              <input type="checkbox" name="" id="terms">Aceito os termos de uso</label>
             <button>Entrar</button>
           </div>
         </form>
