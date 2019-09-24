@@ -22,8 +22,6 @@ vm.modal = function(tipo) {
 }
 
 //Elementos com ações desabilitadas
-vm.actionsPrevent = ["esqueceu", "exit-esqueceu"]
-
 document.getElementById('esqueceu').addEventListener("click", function(event){
     event.preventDefault()
 });
