@@ -34,8 +34,17 @@
               <img src="../../images/user-password.png" alt="" class="image-password">
           </div>
           <div class="forget-and-sigin">
-            <a href="">Esqueceu a senha ?</a>
-            <button>Entrar</button>
+            <a href="" id="esqueceu" onclick="modal('esqueceu')">Esqueceu a senha ?</a>
+            <button class="button-login">Entrar</button>
+          </div>
+          <div class="forget" id="modal-esqueceu">
+            <label>Digite o seu e-mail para recuperação: </label>
+            <input type="email" name="" id="" placeholder="Informe seu e-mail para recuperação">
+            <img src="../../images/user-password.png" alt="" class="image-password">
+            <div>
+              <button class="button-login" onclick="modal('exit-esqueceu')" id="exit-esqueceu">Fechar</button>
+              <button class="button-login">Enviar</button>
+            </div>
           </div>
         </form>
       </div>
@@ -86,7 +95,7 @@
               <input type="checkbox" name="" id="adm">Receber e-mails de administradores.</label>
             <label for="terms">
               <input type="checkbox" name="" id="terms">Aceito os termos de uso</label>
-            <button>Entrar</button>
+            <button>Cadastrar</button>
           </div>
         </form>
       </div>

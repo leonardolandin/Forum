@@ -108,7 +108,7 @@
   justify-content: space-between;
 }
 
-.forget-and-sigin button {
+.button-login  {
   height: 40px;
   width: 100px;
   border: 1px solid #00000063;
@@ -120,7 +120,7 @@
   outline: none;
 }
 
-.forget-and-sigin button:hover {
+.button-login:hover {
   background-color: white;
   color: black;
   transition: all 0.3s;
@@ -164,4 +164,42 @@
 
 .forget-and-sigin input {
   margin-right: 8px;
+}
+
+.forget {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  -webkit-animation: zoom 0.3s;
+  animation: zoom 0.3s;
+  margin-top: 15px;
+  display: none;
+}
+
+.forget label {
+  align-self: baseline;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.forget input {
+  height: 20px;
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 10px 10px 10px 50px;
+  outline: none;
+  align-self: normal;
+}
+
+.forget img {
+  left: -185px;
+}
+
+.forget div button {
+  margin-right: 20px;
 }
