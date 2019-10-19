@@ -22,9 +22,9 @@ vm.modal = function(tipo) {
 }
 
 //Elementos com ações desabilitadas
-document.getElementById('esqueceu').addEventListener("click", function(event){
-    event.preventDefault()
-});
-document.getElementById('exit-esqueceu').addEventListener("click", function(event){
-    event.preventDefault()
-});
+vm.arrayPrevent = ['esqueceu', 'exit-esqueceu']
+for(let i = 0; i < vm.arrayPrevent.length; i++) {
+    document.getElementById(vm.arrayPrevent[i]).addEventListener("click", function(event){
+        event.preventDefault()
+    });
+}
