@@ -28,3 +28,12 @@ for(let i = 0; i < vm.arrayPrevent.length; i++) {
         event.preventDefault()
     });
 }
+
+vm.hideModal = function() {
+    document.getElementById('auth-login').style.display='none'
+    document.getElementById('auth-cadastro').style.display='none'
+}
+
+vm.modalInside = function(event) {
+    event.stopPropagation();
+}

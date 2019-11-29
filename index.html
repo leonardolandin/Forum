@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="utf-8" />
-    <title>LuthCraft | Fórum</title>
-    <link href="./styles/main.css" rel="stylesheet" />
-    <link href="./styles/login-modal.css" rel="stylesheet" />
-    <link rel="icon" type="imagem/png" href="./images/luthcraft.ico" />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <div class="background">
-      <div class="login-container">
-        <button onclick="modal('cadastro')">Cadastrar-se</button>
-        <button onclick="modal('login')">Entrar</button>
-      </div>
-      <div class="modal-container" id="auth-login">
-        <form class="sign-in-container">
+
+<head>
+  <meta charset="utf-8" />
+  <title>LuthCraft | Fórum</title>
+  <link href="./styles/main.css" rel="stylesheet" />
+  <link href="./styles/login-modal.css" rel="stylesheet" />
+  <link rel="icon" type="imagem/png" href="./images/luthcraft.ico" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="background">
+    <div class="login-container">
+      <button onclick="modal('cadastro')">Cadastrar-se</button>
+      <button onclick="modal('login')">Entrar</button>
+    </div>
+    <div class="modal-container" id="auth-login" onclick="hideModal()">
+      <div class="sign-in-container" onclick="modalInside(event)">
+        <form class="form-container">
           <div class="title-and-exit">
             <h3>Login</h3>
             <span onclick="modal('exit')">&times;</span>
@@ -29,9 +29,9 @@
             <img src="./images/user-login.png" alt="" class="image-login">
           </div>
           <div class="login">
-              <label for="">Senha:</label>
-              <input type="password" placeholder="Informe a senha do usuário">
-              <img src="./images/user-password.png" alt="" class="image-password">
+            <label for="">Senha:</label>
+            <input type="password" placeholder="Informe a senha do usuário">
+            <img src="./images/user-password.png" alt="" class="image-password">
           </div>
           <div class="forget-and-sigin">
             <a href="" id="esqueceu" onclick="modal('esqueceu')">Esqueceu a senha ?</a>
@@ -48,8 +48,10 @@
           </div>
         </form>
       </div>
-      <div class="modal-container" id="auth-cadastro">
-        <form class="sign-in-container sign">
+    </div>
+    <div class="modal-container" id="auth-cadastro" onclick="hideModal()">
+      <div class="sign-in-container sign" onclick="modalInside(event)">
+        <form class="form-container">
           <div class="title-and-exit">
             <h3>Cadastrar-se</h3>
             <span onclick="modal('exit')">&times;</span>
@@ -99,40 +101,31 @@
           </div>
         </form>
       </div>
-      <div class="menu-top">
-        <nav class="nav-top">
-          <img src="./images/logoluth.png" class="logo" />
-          <ul class="container-items">
-            <li><a href="./index.html">Inicio</a></li>
-            <li><a href="./users.html">Membros</a></li>
-            <li><a href="./medals.html">Medalhas</a></li>
-          </ul>
-          <div class="container-social">
-            <a
-              href="https://twitter.com/LuthNetwork"
-              target="_blank"
-              title="Acesse nosso Twitter"
-            >
-              <img src="./images/twitter.png" />
-            </a>
-            <a
-              href="https://www.youtube.com/channel/UCuTyTKA7jXAOJ7zqaDBAdig"
-              target="_blank"
-              title="Acesse nosso Youtube"
-            >
-              <img src="./images/youtube.png" />
-            </a>
-            <a
-              href="https://www.facebook.com/luthcraftoficial"
-              target="_blank"
-              title="Acesse nosso Facebook"
-            >
-              <img src="./images/facebook.png" />
-            </a>
-          </div>
-        </nav>
-      </div>
     </div>
-    <script src="./script/main.js"></script>
-  </body>
+    <div class="menu-top">
+      <nav class="nav-top">
+        <img src="./images/logoluth.png" class="logo" />
+        <ul class="container-items">
+          <li><a href="./index.html">Inicio</a></li>
+          <li><a href="./users.html">Membros</a></li>
+          <li><a href="./medals.html">Medalhas</a></li>
+        </ul>
+        <div class="container-social">
+          <a href="https://twitter.com/LuthNetwork" target="_blank" title="Acesse nosso Twitter">
+            <img src="./images/twitter.png" />
+          </a>
+          <a href="https://www.youtube.com/channel/UCuTyTKA7jXAOJ7zqaDBAdig" target="_blank"
+            title="Acesse nosso Youtube">
+            <img src="./images/youtube.png" />
+          </a>
+          <a href="https://www.facebook.com/luthcraftoficial" target="_blank" title="Acesse nosso Facebook">
+            <img src="./images/facebook.png" />
+          </a>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <script src="./script/main.js"></script>
+</body>
+
 </html>

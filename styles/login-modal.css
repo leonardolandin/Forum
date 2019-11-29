@@ -159,7 +159,7 @@
 }
 
 .sign-in-container.sign {
-  height: 545px;
+  height: 575px;
 }
 
 .forget-and-sigin input {
@@ -202,4 +202,11 @@
 
 .forget div button {
   margin-right: 20px;
+}
+
+.form-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
 }
