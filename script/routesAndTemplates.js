@@ -1,3 +1,5 @@
+vm = this
+
 let homePage = `<section>
 
 </section>`
